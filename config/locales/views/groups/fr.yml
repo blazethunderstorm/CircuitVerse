@@ -34,7 +34,6 @@ fr:
           name: "Nom"
           deadline: "Ligne d'échéance"
           grading: "Notation en cours"
-          actions: "Actions"
           grade: "Note"
         time_remaining_html: "<strong>Temps restant :</strong> %{time_remaining}"
         start_working_btn: "Commencer à travailler"

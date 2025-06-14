@@ -6,7 +6,6 @@ de:
       main_description: "Erfahren Sie mehr über die tollen Leute hinter CircuitVerse"
       submain_description: "CircuitVerse will für immer frei sein und wir versprechen, dass wir keine Werbung laufen werden! Das Projekt ist Open Source und um dessen Weiterentwicklung und Wartung zu gewährleisten, benötigen wir Ihre Unterstützung."
       contribute_at_github_heading: "Zu Open Source beitragen"
-      contribute_at_github_description: "Github"
       how_to_support_heading: "Wie kann ich unterstützen?"
       student_card:
         main_heading: "Ich bin Student"
@@ -26,10 +25,8 @@ de:
       donate_via_opencollective: "Spende über Offenes Kollektiv"
     examples:
       title: "CircuitVerse - Beispiele"
-      main_heading: "EXAMPLES"
       main_description: "Lernen und lassen Sie sich von den besten Beispielen und Benutzern inspirieren"
     index:
-      title: "CircuitVerse - Online Digital Logic Circuit Simulator"
       main_heading: "Tauchen Sie kostenlos in die Welt der Logic Circuits!"
       main_description: "Von einfachen Gateways bis hin zu komplexen sequentiellen Schaltkreisen, Diagrammen für das Plottiming, automatische Schaltkreisgenerierung, Erforschen von Standard-ICs und vieles mehr"
       learn_logic_design: "Lerne Logic Design"
@@ -54,7 +51,6 @@ de:
         main_heading: "Empfohlene Beispiele"
         main_description: "Lernen und inspirieren von den besten Beispielen"
         circuit1_text: "16-Bit-Rippelträger-Adder"
-        circuit2_text: "SAP-1"
         circuit3_text: "Vollwertiger Adder von 2 halben Addern"
       explore_more: "Mehr entdecken"
       editor_picks:
@@ -120,7 +116,6 @@ de:
         main_heading: "5. CircuitVerse Inhalt und Lizenzierung"
         description1: "5.1 Das CircuitVerse Team besitzt und behält alle Rechte an und an dem CircuitVerse Code, dem Design, Funktionalität, und Architektur von CircuitVerse, und jede Software oder Inhalte, die über CircuitVerse bereitgestellt werden (kollektiv \"die CircuitVerse IP\"). Wenn Sie CircuitVerse in einer Weise verwenden wollen, die durch diese Nutzungsbedingungen nicht erlaubt ist, müssen Sie sich zuerst mit dem CircuitVerse Team in Verbindung setzen. Mit Ausnahme der Rechte, die im Rahmen dieser Nutzungsbedingungen ausdrücklich gewährt werden, erhalten Sie keine Rechte an und an einer CircuitVerse IP."
       dmca:
-        main_heading: "6. Digital Millennium Copyright Act (DMCA)"
         description1_html: "6.1 Wenn Sie ein Urheberrechtsinhaber sind und glauben, dass Inhalte auf CircuitVerse Ihre Rechte verletzen, können Sie eine E-Mail an <a href='mailto:support@CircuitVerse.org'>support@CircuitVerse senden. rg</a>.&nbsp;"
         description2_html: "6.2 Wenn Sie ein CircuitVerse-Nutzer sind und glauben, dass Ihre Inhalte keine Urheberrechtsverletzung darstellen und fehlerhaft niedergelegt wurden, du kannst eine Benachrichtigung an <a href='mailto:support@CircuitVerse.org'>support@CircuitVerse senden. rg</a>. Bitte enthalten:"
         list_item1: "Ihr CircuitVerse-Benutzername und E-Mail-Adresse;"

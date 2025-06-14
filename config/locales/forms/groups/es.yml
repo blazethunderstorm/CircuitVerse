@@ -1,8 +1,6 @@
 es:
   helpers:
     label:
-      group_member:
-        emails: "emails"
       group:
         name: "Nombre del grupo:"
     submit:

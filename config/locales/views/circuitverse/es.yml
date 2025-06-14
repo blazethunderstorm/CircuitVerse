@@ -6,7 +6,6 @@ es:
       main_description: "Aprende acerca de la gente impresionante detrás de CircuitVerse"
       submain_description: "CircuitVerse pretende ser libre para siempre y prometemos que no vamos a lanzar anuncios! El proyecto es de código abierto y para asegurar su continuo desarrollo y mantenimiento necesitamos su apoyo."
       contribute_at_github_heading: "Contribuir al Código Abierto"
-      contribute_at_github_description: "Github"
       how_to_support_heading: "¿Cómo apoyar?"
       student_card:
         main_heading: "Soy un estudiante"
@@ -26,7 +25,6 @@ es:
       donate_via_opencollective: "Donar a través de Open Collective"
     examples:
       title: "CircuitVerse - Ejemplos"
-      main_heading: "EXAMPLES"
       main_description: "Aprende y te inspira en los mejores ejemplos y usuarios"
     index:
       title: "CircuitVerse - Simulador digital de circuitos lógicos en línea"
@@ -54,7 +52,6 @@ es:
         main_heading: "Ejemplos destacados"
         main_description: "Aprende y te inspira en los mejores ejemplos"
         circuit1_text: "Adder Ripple Carry de 16 bits"
-        circuit2_text: "SAP-1"
         circuit3_text: "Adder completo de 2 intermediarios"
       explore_more: "Explorar más"
       editor_picks:

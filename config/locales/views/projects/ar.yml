@@ -36,9 +36,7 @@ ar:
     modal:
       embed_circuit_heading: "تضمين دائرتك"
       height: "الارتفاع"
-      width: "Width"
       url: "الرابط"
-      border: "Border"
       border_style: "نمط الحدود"
       publish_button: "نشر"
       advance:

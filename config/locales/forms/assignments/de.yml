@@ -2,7 +2,6 @@ de:
   helpers:
     label:
       assignment:
-        name: "Name"
         description: "Beschreibung"
         grading_scale: "Bewertungsmaßstab"
     submit:

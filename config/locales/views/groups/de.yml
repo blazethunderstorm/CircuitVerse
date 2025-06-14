@@ -21,7 +21,6 @@ de:
       edit_name_btn: "Name bearbeiten"
       primary_mentor_heading: "Primär Mentor:"
       mentor_name_heading: "MENTER:"
-      group_members_heading: "MEMBERS:"
       add_members_btn: "+ Mitglieder hinzufügen"
       add_mentors_btn: "+ Mentoren hinzufügen"
       no_mentors_html: "Es sind keine Mentoren in dieser Gruppe, klicken Sie <strong>+ Mentor</strong> Button um Mentoren hinzuzufügen."
@@ -31,8 +30,6 @@ de:
         heading: "ASSIGNMENTEN:"
         add_assignment_btn: "+ Aufgabe hinzufügen"
         assignment_table_head:
-          name: "Name"
-          deadline: "DeadLine"
           grading: "Bewertung"
           actions: "Aktionen"
           grade: "Note"

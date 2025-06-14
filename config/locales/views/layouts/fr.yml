@@ -3,7 +3,6 @@ fr:
     link_to_simulator: "Simulateur"
     getting_started_dropdown: "Commencer"
     link_to_learn_more: "Apprendre"
-    link_to_docs: "Documentation"
     link_to_features: "Fonctionnalités"
     link_to_teachers: "Professeurs"
     link_to_blog: "Blogue"
@@ -25,7 +24,6 @@ fr:
     header:
       dashboard: "Tableau de bord"
       my_groups: "Mes Groupes"
-      notifications: "Notifications"
       language: "Langue"
     mailer:
       join_us: "Rejoignez-nous"

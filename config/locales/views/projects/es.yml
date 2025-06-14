@@ -36,9 +36,6 @@ es:
     modal:
       embed_circuit_heading: "Incrustar tu circuito"
       height: "Altura"
-      width: "Width"
-      url: "URL"
-      border: "Border"
       border_style: "Estilo del borde"
       publish_button: "Publicar"
       advance:

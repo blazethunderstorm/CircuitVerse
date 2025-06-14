@@ -6,6 +6,5 @@ fr:
         name: "Nom"
         country: "Pays"
         educational_institute: "Instituts éducatifs"
-        locale: "Locale"
         password: "Mot de passe"
         password_confirmation: "Confirmation du mot de passe"

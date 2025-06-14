@@ -1,20 +1,16 @@
 de:
   layout:
-    link_to_simulator: "Simulator"
     getting_started_dropdown: "Erste Schritte"
     link_to_learn_more: "Lernen"
     link_to_docs: "Dokumentation"
     link_to_features: "Eigenschaften"
     link_to_teachers: "Lehrer"
-    link_to_blog: "Blog"
     link_to_about: "Über"
-    link_to_faq: "FAQ"
     footer:
       social_icon_text: "Folgen Sie uns auf:"
       link_to_examples: "Beispiele"
       my_circuits: "Meine Schaltkreise"
       link_to_contribute: "Mitwirken"
-      link_to_forum: "Forum"
       sponsor_logo_text:
         brought_by: "Erstellt von:"
         hosting_sponsor: "Hosting-Sponsor:"
@@ -23,7 +19,6 @@ de:
         infrastructure_sponsor: "Infrastruktur-Sponsor:"
       copyright_text: "Copyright ©️ %{time_current_year} CircuitVerse, Alle Rechte vorbehalten."
     header:
-      dashboard: "Dashboard"
       my_groups: "Meine Gruppen"
       notifications: "Benachrichtigungen"
       language: "Sprache"

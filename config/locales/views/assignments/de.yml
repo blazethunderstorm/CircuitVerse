@@ -1,7 +1,6 @@
 de:
   assignments:
     group_name: "Gruppe: %{name}"
-    deadline: "Deadline:"
     remaining_time_error: "(Beim Laden des Skripts ist etwas schiefgelaufen)"
     form:
       grade_scale_cant_change: "(Kann nicht geändert werden, sobald gesetzt)"
@@ -22,7 +21,6 @@ de:
       title: "%{name} - Aufgabendetails"
       assignment_details_heading: "GESCHÄFTSDETAILS"
     assignment_data:
-      name_html: "<strong>Name:</strong> %{name}"
       group_html: "<strong>Gruppe:</strong> %{group_name}"
       time_remaining_html: "<strong>Verbleibende Zeit:</strong> %{time_remaining}"
       graded_html: "<strong>Bewertet:</strong> %{graded}"

@@ -1,14 +1,11 @@
 ja:
   layout:
-    link_to_simulator: "Simulator"
     getting_started_dropdown: "はじめに"
     link_to_learn_more: "詳細情報"
     link_to_docs: "ドキュメント"
     link_to_features: "特徴"
     link_to_teachers: "先生"
     link_to_blog: "ブログ"
-    link_to_about: "About"
-    link_to_faq: "FAQ"
     footer:
       social_icon_text: "フォローしてください："
       link_to_examples: "例"

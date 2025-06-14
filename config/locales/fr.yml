@@ -15,7 +15,6 @@ fr:
   sign_out: "Se déconnecter"
   assignment: "Affectation"
   launch: "Lancer"
-  fork: "Fork"
   more: "En savoir plus"
   submit: "Soumettre"
   features_heading: "Fonctionnalités"
@@ -25,16 +24,11 @@ fr:
   remove: "Retirer"
   reopen: "Rouvrir"
   close: "Fermer"
-  not_available: "N.A."
   not_entered: "Non entré"
   enter_email: "Entrez l'email"
   enter_password: "Entrez le mot de passe"
   enter_name: "Entrez le nom"
   registration_blocked: "L'inscription est actuellement désactivée"
-  google: "Google"
-  facebook: "Facebook"
-  github: "Github"
-  gitlab: "Gitlab"
   # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
   datetime:
     distance_in_words:
