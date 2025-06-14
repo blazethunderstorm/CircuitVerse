@@ -37,7 +37,6 @@ fr:
       embed_circuit_heading: "Intégrer votre Circuit"
       height: "Hauteur"
       width: "Largeur"
-      url: "URL"
       border: "Bordure"
       border_style: "Style de bordure"
       publish_button: "Publier"

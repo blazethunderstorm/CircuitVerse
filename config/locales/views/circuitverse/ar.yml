@@ -6,7 +6,6 @@ ar:
       main_description: "تعرف على الناس الرائعين خلف دائرة CircuitVerse"
       submain_description: "CircuitVerse يهدف إلى أن تكون مجانية إلى الأبد ونحن نعد بأننا لن ندير الإعلانات! وهذا المشروع مفتوح المصدر ولكفالة استمرار تطويره وصيانته نحتاج إلى دعمكم."
       contribute_at_github_heading: "المساهمة في المصدر المفتوح"
-      contribute_at_github_description: "Github"
       how_to_support_heading: "كيفية الدعم؟"
       student_card:
         main_heading: "أنا طالب"
@@ -54,7 +53,6 @@ ar:
         main_heading: "أمثلة مميزة"
         main_description: "تعلم واحصل على الإلهام من أفضل الأمثلة"
         circuit1_text: "16 بت آد كاري"
-        circuit2_text: "SAP-1"
         circuit3_text: "مدير كامل من 2 نصف العنوان"
       explore_more: "استكشاف المزيد"
       editor_picks:

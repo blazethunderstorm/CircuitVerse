@@ -6,7 +6,6 @@ ja:
       main_description: "CircuitVerseの背後にいる素晴らしい人々について学ぶ"
       submain_description: "CircuitVerseは永遠に無料になることを目指しており、広告を実行しないことをお約束します。 プロジェクトはオープンソースであり、継続的な開発とメンテナンスを確実にするために、私たちはあなたのサポートが必要です。"
       contribute_at_github_heading: "オープンソースに貢献する"
-      contribute_at_github_description: "Github"
       how_to_support_heading: "サポート方法は?"
       student_card:
         main_heading: "私は学生です"
@@ -29,7 +28,6 @@ ja:
       main_heading: "Examples"
       main_description: "最良の例やユーザーから学び、インスピレーションを得ましょう"
     index:
-      title: "CircuitVerse - Online Digital Logic Circuit Simulator"
       main_heading: "無料で論理回路の世界に飛び込んでみよう!"
       main_description: "シンプルなゲートから複雑なシーケンシャル回路まで、タイミング図、自動回路生成、標準ICの探索など"
       learn_logic_design: "ロジックデザインを学ぶ"
@@ -54,7 +52,6 @@ ja:
         main_heading: "注目の例"
         main_description: "最良の例から学び、インスピレーションを得ましょう"
         circuit1_text: "16ビットリップルキャリー・アドダー"
-        circuit2_text: "SAP-1"
         circuit3_text: "2つの半分の追加機能から完全に追加"
       explore_more: "もっと見る"
       editor_picks:

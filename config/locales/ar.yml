@@ -15,7 +15,6 @@ ar:
   sign_out: "تسجيل الخروج"
   assignment: "إسناد"
   launch: "تشغيل"
-  fork: "Fork"
   more: "المزيد"
   submit: "إرسال"
   features_heading: "الميزات"
@@ -33,8 +32,6 @@ ar:
   registration_blocked: "التسجيل معطل حاليا"
   google: "جوجل"
   facebook: "فيسبوك"
-  github: "Github"
-  gitlab: "Gitlab"
   # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
   datetime:
     distance_in_words:

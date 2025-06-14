@@ -6,9 +6,7 @@ es:
     link_to_docs: "Documentación"
     link_to_features: "Características"
     link_to_teachers: "Profesores"
-    link_to_blog: "Blog"
     link_to_about: "Acerca de"
-    link_to_faq: "FAQ"
     footer:
       social_icon_text: "Síguenos en:"
       link_to_examples: "Ejemplos"
@@ -31,5 +29,3 @@ es:
       join_us: "Únete"
       copyright_text: "Copyright ©️ %{time_current_year} CircuitVerse. Todos los derechos reservados. Para cualquier problema, contacta con support@circuitverse.org"
       unsubscribe_email_notifications: "Darse de baja de las notificaciones por correo electrónico"
-    simulator:
-      title: "CircuitVerse - Digital Circuit Simulator online"

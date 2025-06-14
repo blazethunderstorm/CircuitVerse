@@ -6,7 +6,6 @@ ja:
   launch_simulator: "シミュレータを起動"
   email_us_heading: "メールでお問い合わせください"
   join_at_slack_heading: "参加して私たちとチャットする"
-  join_at_slack_description: "Slack Channel"
   welcome_back_text: "Digital Circuit Universiverへようこそ!"
   save: "保存"
   back: "戻る"
@@ -15,7 +14,6 @@ ja:
   sign_out: "サインアウト"
   assignment: "割り当て"
   launch: "起動"
-  fork: "Fork"
   more: "もっと見る"
   submit: "送信"
   features_heading: "特徴"
@@ -31,10 +29,6 @@ ja:
   enter_password: "パスワードを入力"
   enter_name: "名前を入力"
   registration_blocked: "サインアップは現在無効です"
-  google: "Google"
-  facebook: "Facebook"
-  github: "Github"
-  gitlab: "Gitlab"
   # Used in distance_of_time_in_words(), distance_of_time_in_words_to_now(), time_ago_in_words()
   datetime:
     distance_in_words:

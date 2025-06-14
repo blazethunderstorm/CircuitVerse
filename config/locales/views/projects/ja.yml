@@ -36,9 +36,6 @@ ja:
     modal:
       embed_circuit_heading: "回路を埋め込み"
       height: "高さ"
-      width: "Width"
-      url: "URL"
-      border: "Border"
       border_style: "枠線スタイル"
       publish_button: "公開"
       advance:

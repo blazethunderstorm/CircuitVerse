@@ -35,8 +35,6 @@ fr:
         groups_user_belong_to: "LES GROUPES VOUS ÊTES DANS :"
         groups_user_owns: "GROUPES VOUS PRENEZ :"
       index:
-        title: "%{name} - Circuits"
-        alt_title: "Nil - Circuits"
         edit_details: "Modifier les détails"
         my_circuits: "Mes Circuits"
         favourite_circuits: "Circuits préférés"
@@ -78,12 +76,10 @@ fr:
       remember_me: "Se souvenir de moi"
     shared:
       login_with: "Se connecter avec"
-      login_with_sso: "Single Sign On"
       resend_email: "Vous n'avez pas reçu les instructions de confirmation ?"
     unlocks:
       resend_unlock_instructions: "Renvoyer les instructions de déverrouillage"
     notifications:
-      heading: "Notifications"
       all: "Tous"
       unread: "Non lus"
       mark_as_read_button: "Marquer tout comme lu"

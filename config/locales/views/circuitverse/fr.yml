@@ -6,7 +6,6 @@ fr:
       main_description: "En savoir plus sur les gens géniaux derrière CircuitVerse"
       submain_description: "CircuitVerse vise à être libre pour toujours et nous promettons que nous ne lancerons pas de publicités ! Le projet est open source et pour assurer sa poursuite du développement et de la maintenance nous avons besoin de votre soutien."
       contribute_at_github_heading: "Contribuer à l'Open Source"
-      contribute_at_github_description: "Github"
       how_to_support_heading: "Comment soutenir ?"
       student_card:
         main_heading: "Je suis un étudiant"
@@ -54,7 +53,6 @@ fr:
         main_heading: "Exemples en vedette"
         main_description: "Apprendre et s'inspirer des meilleurs exemples"
         circuit1_text: "Additionneur parallèle à propagation de retenue 16-bits"
-        circuit2_text: "SAP-1"
         circuit3_text: "Additionneur complet à partir de 2 demi-additionneurs"
       explore_more: "Explorer plus"
       editor_picks:
@@ -120,7 +118,6 @@ fr:
         main_heading: "5. Contenu et licence CircuitVerset"
         description1: "5.1 Sauf pour tout contenu généré par l'utilisateur, l'équipe CircuitVerse possède et conserve tous les droits sur le code CircuitVerse, la conception, , et l'architecture de CircuitVerse, ainsi que tout logiciel ou contenu fourni par CircuitVerse (collectivement « l'IP CircuitVerse »). Si vous voulez utiliser CircuitVerse d'une manière qui n'est pas autorisée par les présentes conditions d'utilisation, vous devez d'abord contacter l'équipe CircuitVerse. Sauf pour tout droit explicitement accordé en vertu des présentes conditions d'utilisation, vous ne bénéficiez d'aucun droit sur et à aucune PI de CircuitVerse."
       dmca:
-        main_heading: "6. Digital Millennium Copyright Act (DMCA)"
         description1_html: "6.1 Si vous êtes détenteur d'un droit d'auteur et que vous pensez que le contenu de CircuitVerse viole vos droits, vous pouvez envoyer un mail à <a href='mailto:support@CircuitVerse.org'>support@CircuitVerse. rg</a>.&nbsp;"
         description2_html: "6.2 Si vous êtes un utilisateur de CircuitVerse et que vous pensez que votre contenu ne constitue pas une violation du droit d'auteur et a été supprimé par erreur, vous pouvez envoyer une notification à <a href='mailto:support@CircuitVerse.org'>support@CircuitVerse. rg</a>. Veuillez inclure :"
         list_item1: "Votre nom d'utilisateur et votre adresse e-mail CircuitVerse;"

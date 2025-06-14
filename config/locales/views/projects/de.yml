@@ -15,7 +15,6 @@ de:
       main_heading: "Projekt bearbeiten"
     get_projects:
       searched_projects_heading: "Gesuchte Projekte"
-      searched_tags_heading: "Tags:"
     stars_count: "Sterne"
     views_count: "Aufrufe"
     project_user: "Benutzer:"
@@ -36,9 +35,6 @@ de:
     modal:
       embed_circuit_heading: "Einbetten Sie Ihren Schaltkreis"
       height: "Höhe"
-      width: "Width"
-      url: "URL"
-      border: "Border"
       border_style: "Rahmenstil"
       publish_button: "Veröffentlichen"
       advance:
