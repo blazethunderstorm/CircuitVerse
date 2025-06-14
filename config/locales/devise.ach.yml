@@ -1,0 +1,63 @@
+# Additional translations at https://github.com/plataformatec/devise/wiki/I18n
+ach:
+  devise:
+    confirmations:
+      confirmed: "crwdns934:0crwdne934:0"
+      send_instructions: "crwdns936:0crwdne936:0"
+      send_paranoid_instructions: "crwdns938:0crwdne938:0"
+    failure:
+      already_authenticated: "crwdns940:0crwdne940:0"
+      inactive: "crwdns942:0crwdne942:0"
+      invalid: "crwdns944:0%{authentication_keys}crwdne944:0"
+      locked: "crwdns946:0crwdne946:0"
+      last_attempt: "crwdns948:0crwdne948:0"
+      not_found_in_database: "crwdns950:0%{authentication_keys}crwdne950:0"
+      timeout: "crwdns952:0crwdne952:0"
+      unauthenticated: "crwdns954:0crwdne954:0"
+      unconfirmed: "crwdns958:0crwdne958:0"
+    mailer:
+      confirmation_instructions:
+        subject: "crwdns960:0crwdne960:0"
+      reset_password_instructions:
+        subject: "crwdns962:0crwdne962:0"
+      unlock_instructions:
+        subject: "crwdns964:0crwdne964:0"
+      email_changed:
+        subject: "crwdns966:0crwdne966:0"
+      password_change:
+        subject: "crwdns968:0crwdne968:0"
+    omniauth_callbacks:
+      failure: "crwdns970:0%{kind}crwdnd970:0%{reason}crwdne970:0"
+      success: "crwdns972:0%{kind}crwdne972:0"
+    passwords:
+      no_token: "crwdns974:0crwdne974:0"
+      send_instructions: "crwdns976:0crwdne976:0"
+      send_paranoid_instructions: "crwdns978:0crwdne978:0"
+      updated: "crwdns980:0crwdne980:0"
+      updated_not_active: "crwdns982:0crwdne982:0"
+    registrations:
+      destroyed: "crwdns984:0crwdne984:0"
+      signed_up: "crwdns986:0crwdne986:0"
+      signed_up_but_inactive: "crwdns988:0crwdne988:0"
+      signed_up_but_locked: "crwdns990:0crwdne990:0"
+      signed_up_but_unconfirmed: "crwdns992:0crwdne992:0"
+      update_needs_confirmation: "crwdns994:0crwdne994:0"
+      updated: "crwdns996:0crwdne996:0"
+    sessions:
+      signed_in: "crwdns998:0crwdne998:0"
+      signed_out: "crwdns1000:0crwdne1000:0"
+      already_signed_out: "crwdns1002:0crwdne1002:0"
+    unlocks:
+      send_instructions: "crwdns1004:0crwdne1004:0"
+      send_paranoid_instructions: "crwdns1006:0crwdne1006:0"
+      unlocked: "crwdns1008:0crwdne1008:0"
+  errors:
+    messages:
+      already_confirmed: "crwdns1010:0crwdne1010:0"
+      confirmation_period_expired: "crwdns1012:0%{period}crwdne1012:0"
+      expired: "crwdns1014:0crwdne1014:0"
+      not_found: "crwdns1016:0crwdne1016:0"
+      not_locked: "crwdns1018:0crwdne1018:0"
+      not_saved:
+        one: "crwdns1020:1%{resource}crwdne1020:1"
+        other: "crwdns1020:5%{count}crwdnd1020:5%{resource}crwdne1020:5"

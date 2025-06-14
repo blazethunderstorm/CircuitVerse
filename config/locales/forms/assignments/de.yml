@@ -1,10 +1,1 @@
 de:
-  helpers:
-    label:
-      assignment:
-        description: "Beschreibung"
-        grading_scale: "Bewertungsmaßstab"
-    submit:
-      assignment:
-        create: "Aufgabe erstellen"
-        update: "Aufgabe aktualisieren"
