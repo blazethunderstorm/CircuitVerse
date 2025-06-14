@@ -1,11 +1,1 @@
 es:
-  helpers:
-    label:
-      group:
-        name: "Nombre del grupo:"
-    submit:
-      group_member:
-        create: "Añadir miembros"
-      group:
-        create: "Guardar"
-        update: "Guardar"

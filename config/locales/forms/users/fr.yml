@@ -1,10 +1,1 @@
 fr:
-  helpers:
-    label:
-      user:
-        email: "Courriel"
-        name: "Nom"
-        country: "Pays"
-        educational_institute: "Instituts éducatifs"
-        password: "Mot de passe"
-        password_confirmation: "Confirmation du mot de passe"
