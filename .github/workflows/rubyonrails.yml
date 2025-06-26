@@ -107,6 +107,14 @@ jobs:
         run: |
           bundle exec rbs collection install
           bundle exec steep check
+
+      - name: Upload coverage to Qlty
+        if: always()
+        run: |
+          curl -Ls https://coverage.qlty.sh | bash
+        env:
+          QLTY_TOKEN: ${{ secrets.QLTY_TOKEN }}
+
   lint:
     runs-on: ubuntu-latest
     steps:
