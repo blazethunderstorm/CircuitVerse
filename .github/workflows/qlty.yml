@@ -1,0 +1,70 @@
+name: Qlty Coverage Report
+
+on:
+  [push, pull_request]
+
+jobs:
+  qlty:
+    name: Qlty Code Coverage
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:16-alpine
+        ports:
+          - "5432:5432"
+        env:
+          POSTGRES_DB: rails_test
+          POSTGRES_USER: rails
+          POSTGRES_PASSWORD: password
+      redis:
+        image: redis:alpine
+        ports:
+          - "6379:6379"
+        options: --entrypoint redis-server
+
+    env:
+      RAILS_ENV: test
+      DATABASE_URL: postgres://rails:password@localhost:5432/rails_test
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: yarn
+
+      - name: Install system packages for canvas
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential g++
+
+      - name: Install JS dependencies
+        run: yarn install
+
+      - name: Build frontend assets
+        run: yarn build
+
+      - name: Set up DB
+        run: |
+          cp .env.example .env
+          bin/rails db:schema:load
+          bin/rails data:migrate
+
+      - name: Run tests with coverage
+        run: bundle exec rspec
+
+      - name: Upload to Qlty
+        uses: qlty-io/gh-action@v1
+        with:
+          token: ${{ secrets.QLTY_TOKEN }}
