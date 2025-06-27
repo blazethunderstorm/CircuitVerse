@@ -1,4 +1,4 @@
-name: "Ruby on Rails CI"
+name: Ruby on Rails CI
 
 on:
   [push, pull_request, workflow_dispatch]
@@ -82,19 +82,6 @@ jobs:
           name: screenshots
           path: ${{ github.workspace }}/tmp/capybara
           if-no-files-found: ignore
-
-  qlty-upload:
-    name: Upload to Qlty
-    needs: test
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Upload Qlty coverage
-        uses: qlty-io/gh-action@v1
-        with:
-          token: ${{ secrets.QLTY_TOKEN }}
 
   lint:
     name: Ruby Lint
