@@ -1,5 +1,13 @@
 # frozen_string_literal: true
 
+# ✅ START SimpleCov for Qlty
+require 'simplecov'
+SimpleCov.start 'rails' do
+  enable_coverage :branch
+  add_filter '/spec/'
+end
+# ✅ END SimpleCov setup
+
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require "spec_helper"
 ENV["RAILS_ENV"] ||= "test"
