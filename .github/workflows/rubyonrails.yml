@@ -79,8 +79,12 @@ jobs:
           openssl genrsa -out config/private.pem 2048
           openssl rsa -in config/private.pem -outform PEM -pubout -out config/public.pem
 
-      - name: Run tests
-        run: bundle exec rspec
+      - name: Run tests and upload coverage to Qlty
+        run: |
+          bundle exec rspec
+          curl -Ls https://coverage.qlty.sh | bash
+        env:
+          QLTY_TOKEN: ${{ secrets.QLTY_TOKEN }}
 
       - name: Keep screenshots from failed system tests
         uses: actions/upload-artifact@v4
@@ -107,13 +111,6 @@ jobs:
         run: |
           bundle exec rbs collection install
           bundle exec steep check
-
-      - name: Upload coverage to Qlty
-        if: always()
-        run: |
-          curl -Ls https://coverage.qlty.sh | bash
-        env:
-          QLTY_TOKEN: ${{ secrets.QLTY_TOKEN }}
 
   lint:
     runs-on: ubuntu-latest
