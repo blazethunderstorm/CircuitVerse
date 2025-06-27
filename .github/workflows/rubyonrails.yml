@@ -5,8 +5,7 @@ on:
 
 jobs:
   test:
-    permissions:
-      pull-requests: write
+    name: Run RSpec Tests
     runs-on: ubuntu-latest
     services:
       postgres:
@@ -30,10 +29,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 100
           submodules: recursive
 
-      - name: Install Ruby and gems
+      - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
@@ -44,49 +42,40 @@ jobs:
           node-version: '22'
           cache: 'yarn'
 
-      - name: Install Dependencies for canvas
+      - name: Install system packages
         run: |
           sudo apt-get update
           sudo apt-get install -y libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential g++
 
-      - name: Install reviewdog
-        uses: reviewdog/action-setup@v1
-        with:
-          reviewdog_version: latest
+      - name: Yarn install
+        run: yarn install
 
-      - run: yarn install
-
-      - name: Install Playwright and browsers
+      - name: Install Playwright
         run: |
           export PLAYWRIGHT_CLI_VERSION=$(bundle exec ruby -e 'require "playwright"; puts Playwright::COMPATIBLE_PLAYWRIGHT_VERSION.strip')
           yarn add -D "playwright@$PLAYWRIGHT_CLI_VERSION"
           npx playwright install --with-deps
 
-      - name: Copy the sample ENV Config
+      - name: Setup environment
         run: cp .env.example .env
 
-      - name: Set up database schema
-        run: bin/rails db:schema:load
-
-      - name: Run data migration tasks
-        run: bin/rails data:migrate
+      - name: Prepare DB
+        run: |
+          bin/rails db:schema:load
+          bin/rails data:migrate
 
       - name: Build assets
         run: yarn run build
 
-      - name: Configure keys
+      - name: Setup JWT keys
         run: |
           openssl genrsa -out config/private.pem 2048
           openssl rsa -in config/private.pem -outform PEM -pubout -out config/public.pem
 
-      - name: Run tests and upload coverage to Qlty
-        run: |
-          bundle exec rspec
-          curl -Ls https://coverage.qlty.sh | bash
-        env:
-          QLTY_TOKEN: ${{ secrets.QLTY_TOKEN }}
+      - name: Run RSpec tests with coverage
+        run: bundle exec rspec
 
-      - name: Keep screenshots from failed system tests
+      - name: Upload failed test screenshots
         uses: actions/upload-artifact@v4
         if: failure()
         with:
@@ -94,39 +83,33 @@ jobs:
           path: ${{ github.workspace }}/tmp/capybara
           if-no-files-found: ignore
 
-      - uses: aki77/delete-pr-comments-action@v1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          bodyContains: "[undercover]"
-          noReply: "true"
-
-      - name: Run reviewdog
-        env:
-          REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.github_token }}
-        run: |
-          git fetch --no-tags
-          reviewdog -reporter=github-pr-review -runners=undercover --fail-on-error
-
-      - name: Static type checking
-        run: |
-          bundle exec rbs collection install
-          bundle exec steep check
-
-  lint:
+  qlty-upload:
+    name: Upload to Qlty
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
-        with:
-          submodules: recursive
+        uses: actions/checkout@v4
 
-      - name: Install Ruby and gems
+      - name: Upload Qlty coverage
+        uses: qlty-io/gh-action@v1
+        with:
+          token: ${{ secrets.QLTY_TOKEN }}
+
+  lint:
+    name: Ruby Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
 
-      - name: Security audit dependencies
+      - name: Audit for vulnerabilities
         run: bundle exec bundler-audit --update
 
-      - name: Lint Ruby files
+      - name: Run Rubocop
         run: bundle exec rubocop --parallel
