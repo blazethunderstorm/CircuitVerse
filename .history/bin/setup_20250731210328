@@ -1,0 +1,71 @@
+- require 'pathname'
++ require "fileutils"
+- require 'fileutils'
+- include FileUtils
+
+- # path to your application root.
++ APP_ROOT = File.expand_path("..", __dir__)
+- APP_ROOT = Pathname.new File.expand_path('../../', __FILE__)
++ APP_NAME = "logix"
+
+  def system!(*args)
+-   system(*args) || abort("\n== Command #{args} failed ==")
++   system(*args, exception: true)
+  end
+
+- def check_command(command)
++ FileUtils.chdir APP_ROOT do
+-   system("which #{command} > /dev/null 2>&1")
++   # This script is a way to set up or update your development environment automatically.
+- end
++   # This script is idempotent, so that you can run it at any time and get an expectable outcome.
++   # Add necessary setup steps to this file.
+
+- def print_section(title)
++   puts "== Installing dependencies =="
+-   puts "\n" + "=" * 50
++   system! "gem install bundler --conservative"
+-   puts "== #{title} =="
++   system("bundle check") || system!("bundle install")
+-   puts "=" * 50
+- end
+
+- def print_substep(message)
++   # puts "\n== Copying sample files =="
+-   puts "   → #{message}"
++   # unless File.exist?("config/database.yml")
+- end
++   #   FileUtils.cp "config/database.yml.sample", "config/database.yml"
++   # end
+
+- def check_dependencies
++   puts "\n== Preparing database =="
+-   print_section "Checking Dependencies"
++   system! "bin/rails db:prepare"
+
+-   dependencies = {
++   puts "\n== Removing old logs and tempfiles =="
+-     'git' => 'Git version control',
++   system! "bin/rails log:clear tmp:clear"
+-     'ruby' => 'Ruby programming language',
+-     'bundle' => 'Ruby Bundler',
+-     'node' => 'Node.js runtime',
+-     'yarn' => 'Yarn package manager',
+-     'psql' => 'PostgreSQL client',
+-     'redis-cli' => 'Redis client',
+-     # 'convert' => 'ImageMagick (convert command)',
+-     'cmake' => 'CMake build system',
+-     'openssl' => 'OpenSSL',
+-     'foreman' => 'Process manager (for bin/dev)'
+-   }
+
+-   missing_deps = []
++   puts "\n== Restarting application server =="
++   system! "bin/rails restart"
+
+  # puts "\n== Configuring puma-dev =="
+  # system "ln -nfs #{APP_ROOT} ~/.puma-dev/#{APP_NAME}"
+  # system "curl -Is https://#{APP_NAME}.test/up | head -n 1"
+
+
+end

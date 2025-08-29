@@ -1,0 +1,34 @@
+// Bootstrap first
+@import "bootstrap/scss/bootstrap";
+
+// Font Awesome
+@import "font-awesome/scss/font-awesome";
+
+// Other vendor CSS
+@import "trumbowyg/dist/ui/trumbowyg.min";
+@import "select2/dist/css/select2.css";
+
+// Your local SCSS files
+@import "theme";
+@import "autoComplete";
+@import "commontator/application";
+@import "simple_discussion_overrides";
+@import "layout";
+@import "components";
+@import "navbar";
+@import "footer";
+@import "about";
+@import "contribute";
+@import "search";
+@import "custom_mail";
+@import "editor";
+@import "home";
+@import "assignments";
+@import "examples";
+@import "groups";
+@import "projects";
+@import "users";
+@import "commontator";
+@import "announcements";
+@import "select2_overrides";
+@import "contests";

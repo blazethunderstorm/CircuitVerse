@@ -1,0 +1,39 @@
+// Theme / custom variables
+@import "theme";
+
+// Bootstrap SCSS
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// External CSS libraries
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+@import "../node_modules/trumbowyg/dist/ui/trumbowyg.min.css";
+@import "../node_modules/select2/dist/css/select2.css";
+
+// Custom styles
+@import "autoComplete";
+@import "commontator/application";
+@import "simple_discussion_overrides";
+
+// Layout & components
+@import "layout";
+@import "components";
+@import "navbar";
+@import "footer";
+@import "about";
+@import "contribute";
+@import "search";
+@import "custom_mail";
+@import "editor";
+@import "home";
+@import "assignments";
+@import "examples";
+@import "groups";
+@import "projects";
+@import "users";
+@import "commontator";
+@import "announcements";
+@import "select2_overrides";
+@import "contests";

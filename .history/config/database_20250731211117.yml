@@ -1,0 +1,21 @@
+# config/database.yml
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: your_db_username
+  password: your_db_password
+  host: localhost
+  pool: 5
+
+development:
+  <<: *default
+  database: circuitverse_development
+
+test:
+  <<: *default
+  database: circuitverse_test
+
+production:
+  <<: *default
+  database: circuitverse_production

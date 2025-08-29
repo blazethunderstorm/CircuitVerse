@@ -1,0 +1,53 @@
+#!/usr/bin/env ruby
+require 'pathname'
+require 'fileutils'
+include FileUtils
+
+# path to your application root.
+APP_ROOT = Pathname.new File.expand_path('../../', __FILE__)
+
+def system!(*args)
+  system(*args) || abort("\n== Command #{args} failed ==")
+end
+
+def check_command(command)
+  system("which #{command} > /dev/null 2>&1")
+end
+
+def print_section(title)
+  puts "\n" + "=" * 50
+  puts "== #{title} =="
+  puts "=" * 50
+end
+
+def print_substep(message)
+  puts "   → #{message}"
+end
+
+def check_dependencies
+  print_section "Checking Dependencies"
+
+  dependencies = {
+    'git' => 'Git version control',
+    'ruby' => 'Ruby programming language',
+    'bundle' => 'Ruby Bundler',
+    'node' => 'Node.js runtime',
+    'yarn' => 'Yarn package manager',
+    'psql' => 'PostgreSQL client',
+    'redis-cli' => 'Redis client',
+    # 'convert' => 'ImageMagick (convert command)',
+    'cmake' => 'CMake build system',
+    'openssl' => 'OpenSSL',
+    'foreman' => 'Process manager (for bin/dev)'
+  }
+
+  missing_deps = []
+
+  -   dependencies.each do |cmd, desc|
+    +   # puts "\n== Configuring puma-dev =="
+    -     if check_command(cmd)
+    +   # system "ln -nfs #{APP_ROOT} ~/.puma-dev/#{APP_NAME}"
+    -       print_substep "✓ #{desc} found"
+    +   # system "curl -Is https://#{APP_NAME}.test/up | head -n 1"
+
+end

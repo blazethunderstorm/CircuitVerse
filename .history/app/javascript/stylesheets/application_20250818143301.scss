@@ -1,0 +1,33 @@
+// Theme
+@import "theme";
+
+// External libraries (from node_modules)
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import "~trumbowyg/dist/ui/trumbowyg.min.css";
+@import "~select2/dist/css/select2.css";
+
+// Your custom styles (make sure these files exist in this folder)
+@import "autoComplete";
+@import "commontator/application";
+@import "simple_discussion_overrides";
+
+@import "layout";
+@import "components";
+@import "navbar";
+@import "footer";
+@import "about";
+@import "contribute";
+@import "search";
+@import "custom_mail";
+@import "editor";
+@import "home";
+@import "assignments";
+@import "examples";
+@import "groups";
+@import "projects";
+@import "users";
+@import "commontator";
+@import "announcements";
+@import "select2_overrides";
+@import "contests";
