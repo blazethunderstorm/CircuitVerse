@@ -3,3 +3,5 @@ js: REBUILD_VUE=false yarn build --watch
 worker: bundle exec sidekiq
 mail: mailcatcher -f
 vite: bin/vite dev
+js: yarn build --watch
+css: bun run build:css --watch

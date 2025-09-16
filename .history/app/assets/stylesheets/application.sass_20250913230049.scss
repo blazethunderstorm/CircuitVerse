@@ -1,0 +1,359 @@
+// CircuitVerse - Complete Application Stylesheet
+// ==============================================
+
+// 1. Bootstrap - Core Framework
+@import "bootstrap/scss/bootstrap";
+
+// 2. FontAwesome - Icons
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+@import "@fortawesome/fontawesome-free/scss/solid";
+@import "@fortawesome/fontawesome-free/scss/brands";
+
+// 3. jQuery UI - If you're using it
+@import "jquery-ui/dist/themes/ui-lightness/jquery-ui.css";
+
+// 4. Flatpickr - Date picker (if using)
+@import "flatpickr/dist/flatpickr.css";
+
+// 5. Rails Admin Styles (if using rails_admin)
+// Note: You might need to adjust this path based on your setup
+// @import "rails_admin/src/rails_admin/styles/base";
+
+// 6. Custom CircuitVerse Styles
+// ==============================================
+
+// Variables
+:root {
+  --primary-green: #28a745;
+  --primary-green-hover: #218838;
+  --secondary-gray: #6c757d;
+  --light-bg: #f8f9fa;
+  --dark-text: #212529;
+  --border-color: #dee2e6;
+}
+
+// Base Styles
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--dark-text);
+  background-color: #ffffff;
+}
+
+// Header/Navigation Styles
+.navbar {
+  background-color: var(--primary-green) !important;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+  .navbar-brand {
+    color: white !important;
+    font-weight: 600;
+    font-size: 1.5rem;
+
+    &:hover {
+      color: #e8f5e8 !important;
+    }
+  }
+
+  .nav-link {
+    color: white !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: var(--primary-green-hover);
+      border-radius: 4px;
+    }
+  }
+
+  .dropdown-menu {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+}
+
+// Main Content Area
+main {
+  min-height: calc(100vh - 120px);
+  padding: 2rem 0;
+}
+
+// Sidebar Styles
+.sidebar {
+  background-color: var(--light-bg);
+  border-right: 1px solid var(--border-color);
+  padding: 1.5rem 1rem;
+
+  h6 {
+    font-weight: 600;
+    color: var(--secondary-gray);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+  }
+
+  .nav-link {
+    color: var(--dark-text);
+    padding: 0.5rem 0;
+    border: none;
+
+    &:hover {
+      color: var(--primary-green);
+      background: transparent;
+    }
+
+    &.active {
+      color: var(--primary-green);
+      font-weight: 600;
+    }
+  }
+}
+
+// Form Styles
+.form-control {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 0.75rem;
+
+  &:focus {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+  }
+}
+
+.form-select {
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 0.75rem;
+
+  &:focus {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+  }
+}
+
+// Button Styles
+.btn {
+  border-radius: 6px;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background-color: var(--primary-green);
+  border-color: var(--primary-green);
+
+  &:hover {
+    background-color: var(--primary-green-hover);
+    border-color: var(--primary-green-hover);
+    transform: translateY(-1px);
+  }
+}
+
+.btn-outline-primary {
+  color: var(--primary-green);
+  border-color: var(--primary-green);
+
+  &:hover {
+    background-color: var(--primary-green);
+    border-color: var(--primary-green);
+  }
+}
+
+// Card Styles
+.card {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: box-shadow 0.2s;
+
+  &:hover {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .card-header {
+    background-color: var(--light-bg);
+    border-bottom: 1px solid var(--border-color);
+    font-weight: 600;
+  }
+}
+
+// Circuit/Project Specific Styles
+.project-card {
+  transition: transform 0.2s;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  }
+}
+
+.circuit-canvas {
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  background: white;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+// Simulator Specific Styles
+.simulator-toolbar {
+  background-color: var(--light-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+
+  .btn-group .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}
+
+.component-panel {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  max-height: 70vh;
+  overflow-y: auto;
+
+  .component-category {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--light-bg);
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #e9ecef;
+    }
+  }
+
+  .component-item {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: var(--light-bg);
+    }
+  }
+}
+
+// Footer Styles
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 2rem 0;
+  margin-top: auto;
+
+  a {
+    color: #adb5bd;
+    text-decoration: none;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+
+  main {
+    padding: 1rem 0;
+  }
+
+  .sidebar {
+    padding: 1rem 0.75rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}
+
+// Alerts and Notifications
+.alert {
+  border-radius: 6px;
+  border: none;
+
+  &.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+
+  &.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+
+  &.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+
+  &.alert-info {
+    background-color: #cce7ff;
+    color: #0c5460;
+  }
+}
+
+// Loading States
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.spinner-border-sm {
+  width: 1rem;
+  height: 1rem;
+}
+
+// Utility Classes
+.text-green {
+  color: var(--primary-green) !important;
+}
+
+.bg-green {
+  background-color: var(--primary-green) !important;
+}
+
+.border-green {
+  border-color: var(--primary-green) !important;
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
+}
+
+.rounded-lg {
+  border-radius: 8px !important;
+}
+
+// Animation Classes
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.slide-up {
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
