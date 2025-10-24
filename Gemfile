@@ -22,33 +22,34 @@ gem "omniauth-google-oauth2"
 gem "omniauth-microsoft-office365"
 gem 'omniauth-rails_csrf_protection'
 gem "view_component"
+gem "cssbundling-rails"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem "rails", "~> 8.0.0"
 # Use Puma as the app server
 gem "puma", "~> 6.4"
 # Use SCSS for stylesheets
-gem "sass-rails", "~> 6.0"
+
 gem "terser"
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use CoffeeScript for .coffee assets and views
-gem "coffee-rails", "~> 5.0"
-gem "select2-rails"
+
+
 gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem "turbolinks", "~> 5"
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem "jbuilder", "~> 2.11"
 
 gem "devise"
 
-gem "commontator", "~> 7.0.0"
+
 
 # To generate sitemap.xml
 gem "sitemap_generator"
+gem 'parser', '~> 3.3.0'
 
-gem "jquery-rails"
 
 # gem 'acts_as_votable', '~> 0.11.1'
 
@@ -102,7 +103,6 @@ gem "webpush"
 gem "bootsnap", require: false
 gem 'rexml', '>= 3.3.9'
 
-gem "font-awesome-sass", "~> 5.13.1"
 
 gem "disposable_mail", github: 'CircuitVerse/disposable_email'
 gem "flipper-redis"
@@ -114,7 +114,7 @@ gem "jwt"
 gem "rails-i18n", "~> 8.0.0"
 gem "recaptcha"
 gem "simple_discussion", github: "CircuitVerse/simple_discussion"
-gem "sprockets-rails", "~> 3.5"
+gem "propshaft"
 gem "strong_migrations"
 gem 'rails-data-migrations', github: 'notarize/rails-data-migrations'
 
@@ -159,7 +159,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem "rails-erd"
   gem "rubocop"
-  
+
   gem "bundler-audit", "~> 0.9.1"
   gem 'database_consistency', require: false
   gem "lookbook", ">= 2.2.0"
@@ -184,7 +184,7 @@ gem "rack-attack"
 
 gem "jsbundling-rails", "~> 1.0"
 
-gem "sassc-rails"
+
 gem "stimulus-rails", "~> 1.0"
 
 gem "noticed", "~> 1.6"
@@ -231,3 +231,5 @@ gem 'mutex_m'
 gem "observer", "~> 0.1.2"
 
 gem "drb", "~> 2.2"
+gem "cssbundling-rails"
+gem "cssbundling-rails"

@@ -1,16 +1,16 @@
-@import '../../../../node_modules/bootstrap/scss/bootstrap.scss';
-//importing font awesome
-$fa-font-path: "../../../../node_modules/@fortawesome/fontawesome-free/webfonts";
-@import "../../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "../../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+// Bootstrap
+@use '../../../../node_modules/bootstrap/scss/bootstrap.scss' as b;
 
+// Font Awesome
+$fa-font-path: "../../../../node_modules/@fortawesome/fontawesome-free/webfonts";
+@use "../../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss" as fa;
+@use "../../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss" as fas;
 
 .subcircuitdialog {
   display: none;
   overflow-x: hidden;
   overflow-y: auto;
 }
-
 
 .side {
   width: 330px;
@@ -20,8 +20,8 @@ $fa-font-path: "../../../../node_modules/@fortawesome/fontawesome-free/webfonts"
   overflow-y: scroll;
 }
 
-.report-sidebar a {   
-  color: $white;
+.report-sidebar a {
+  color: b.$white; // ✅ Use the namespace from Bootstrap
   font-size: 13px;
   padding: 10px;
   position: fixed;

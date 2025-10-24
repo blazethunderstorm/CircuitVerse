@@ -1,4 +1,3 @@
-import jquery from 'jquery';
-
-window.jQuery = jquery;
-window.$ = jquery;
+import jQuery from "jquery";
+window.$ = window.jQuery = jQuery;
+export default jQuery;
